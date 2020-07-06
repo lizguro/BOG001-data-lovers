@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #F24ACD;
+    height: 500px;
+
+}
+
+header img{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: block;
+}
+
+header p {
+    font-family: 'Arizonia', cursive;
+    font-size: 1000%;
+    color: #85F043;
+    -webkit-text-stroke: 2px #2ff0cd;
+    width: 100%;
+    position: absolute;
+    top: 320px;
+    text-align: right;
+    right: 100px;
+   
+}
