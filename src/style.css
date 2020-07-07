@@ -29,6 +29,24 @@ header p {
    
 }
 /*ESTILOS NAVEGADOR*/
+nav{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 15px;
+    font-family: 'Atma', cursive;
+    font-size: 40px;
+    color: #16ACC9;
+    -webkit-text-stroke: 0.5px #F24ACD;
+    text-align: center;
+    flex-grow: 1;
+}
 
 /*ESTILOS MAIN*/
 
@@ -82,3 +100,4 @@ footer > div{
     text-align: right;   
     width: 45%;
 }
+
