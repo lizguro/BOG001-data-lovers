@@ -36,6 +36,14 @@ main{
     background: url(./imagenes/Rick-and-Morty-Desktop1-Backgrounds-HD.jpg);
     width: 100%;
     height: 1000px;
+    background-size: cover;
+}
+
+main div{
+    background: rgb(233, 233, 220);
+    width: 70%;
+    height: 1000px;
+    margin-left: 15%;
 }
 
 /*ESTILOS PIE DE PAGINA*/
@@ -43,7 +51,8 @@ footer {
 background: url(./imagenes/footer_Rick\ and\ Morty.jpg);
 width: 100%;
 height: 300px;
-background-size: initial;
+background-size: cover;
+
 }
 
 div > img {
