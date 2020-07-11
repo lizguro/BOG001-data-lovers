@@ -1,9 +1,12 @@
-//import { mainCharacter } from './data.js';
+import { orderNames } from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
 const root = document.getElementById("root");
+let sortByAlpha = document.querySelector(".sortByName");
+const allCharacters = document.getElementById("allCharacters")
 const RickMortyDB = data.results;
+
 
 const printMainCharacters = (arrayparameter) => {
 
@@ -23,5 +26,32 @@ const printMainCharacters = (arrayparameter) => {
     }
     root.innerHTML = templateCharacters;
 };
-printMainCharacters(RickMortyDB);
 
+const printAllCharacters = (char) => {
+
+    let templateAllCharacters = "";
+
+    for (let i = 0; i < RickMortyDB.length; i++) {
+
+        const printAll = `
+            <article class="All-item">
+             <a href="#/${char[i].id}/" class="All-conteiner">
+                 <img src="${char[i].image}" alt="${char[i].name}">
+                  <p>${char[i].name}</p>
+             </a>
+            </article>`
+
+        templateAllCharacters = templateAllCharacters + printAll;
+    }
+    allCharacters.innerHTML = templateAllCharacters;
+};
+
+const getOrderNames = (e) => {
+    const BtnSort = e.target.textContent;
+    printAllCharacters(orderNames(RickMortyDB, BtnSort))
+};
+
+sortByAlpha.addEventListener("click", getOrderNames)
+
+printMainCharacters(RickMortyDB);
+printAllCharacters(RickMortyDB);

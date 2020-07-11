@@ -49,21 +49,21 @@ nav ul li {
 }
 
 /*ESTILOS MAIN*/
-
+/*Contiene el fondo del main*/
 main{
     background: url(./imagenes/Rick-and-Morty-Desktop1-Backgrounds-HD.jpg);
     width: 100%;
-    height: 1000px;
+    height: auto;
     background-size: cover;
 }
 
 main div{
     background: rgb(233, 233, 220);
     width: 70%;
-    height: 1000px;
+    height: auto;
     margin-left: 15%;
 }
-
+/*Estilos de personajes principales*/
 #root{
     font-size: 40px;
     text-align: center;
@@ -75,6 +75,10 @@ main div{
     
 }
 
+.mainChacarters{
+    max-height: 500px;
+}
+
 .mainChacarters h2{
     font-family: 'Atma', cursive;
     font-size: 30px;
@@ -82,7 +86,6 @@ main div{
     padding-top: 3%;
     color: #F24ACD;
     padding-bottom: 20px;
-
 }
 
 .main-item {
@@ -101,6 +104,58 @@ main div{
     font-family: 'Audiowide', cursive;
     font-size: 70%;
 
+}
+/*Estilos de sortby*/
+.alphaCharacters h2{
+    font-family: 'Atma', cursive;
+    font-size: 30px;
+    padding-left: 3%;
+    padding-top: 3%;
+    color: #F24ACD;
+    padding-bottom: 20px;
+  
+}
+
+.alphaOrder{
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    display: flex;
+    margin-left: 3%;
+}
+
+.sortByName {
+    font-family: 'Audiowide', cursive;
+    font-size: 30px;
+    margin-left: -18%;
+    list-style: none;
+}
+/*Estilos de Todos los personajes*/
+.All-conteiner{
+    display: inline-flex;
+    align-items: center;
+}
+.All-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+    width: 50%;
+    
+}
+.allCharacters{
+    display: flex;
+
+    margin-left: 3%;
+   }
+
+
+.All-conteiner img{
+    width: 100px;
+}
+
+.All-conteiner p{
+    color:black;
+    font-family: 'Audiowide', cursive;
+    font-size: 200%;
 }
 
 /*ESTILOS PIE DE PAGINA*/
