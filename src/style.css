@@ -33,35 +33,179 @@ nav{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);
 }
 
-nav ul {
+nav > ul {
     display: flex;
     list-style: none;
 }
 
-nav ul li {
+nav ul li a{
     padding: 15px;
     font-family: 'Atma', cursive;
     font-size: 40px;
     color: #16ACC9;
     -webkit-text-stroke: 0.5px #F24ACD;
-    text-align: center;
-    flex-grow: 1;
+    text-decoration: none;
+    
 }
 
-/*ESTILOS MAIN*/
+nav ul li{
+    text-align: center;
+    flex-grow: 1;
+    list-style-type: none;
+}
 
+nav li:hover ul{
+    display: block;
+}
+
+.submenu-char li {
+    display: block;
+}
+
+.submenu-char li a:hover{
+    background: rgb(191, 219, 90);
+}
+
+.submenu-char{
+    display: none;
+    position: absolute;
+    top: 565px;
+    left: 15%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
+}
+
+
+/*ESTILOS MAIN*/
+/*Contiene el fondo del main*/
 main{
     background: url(./imagenes/Rick-and-Morty-Desktop1-Backgrounds-HD.jpg);
     width: 100%;
-    height: 1000px;
+    height: auto;
     background-size: cover;
 }
 
 main div{
     background: rgb(233, 233, 220);
     width: 70%;
-    height: 1000px;
+    height: auto;
     margin-left: 15%;
+}
+/*Estilos de personajes principales*/
+#root{
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+
+.mainChacarters{
+    max-height: 500px;
+}
+
+.mainChacarters h2{
+    font-family: 'Atma', cursive;
+    font-size: 30px;
+    padding-left: 3%;
+    padding-top: 3%;
+    color: #F24ACD;
+    padding-bottom: 20px;
+}
+
+.main-item {
+   display: flex;
+   width: 20%;
+}
+
+.main-item img{
+    width: 100%;
+}
+
+.main-conteiner p{
+    background-color: black;
+    color: blanchedalmond;
+    margin-top: -10px;
+    font-family: 'Audiowide', cursive;
+    font-size: 70%;
+
+}
+/*Estilos de sortby*/
+.alphaCharacters h2{
+    font-family: 'Atma', cursive;
+    font-size: 30px;
+    padding-left: 3%;
+    padding-top: 3%;
+    color: #F24ACD;
+    padding-bottom: 20px;
+  
+}
+
+.alphaOrder{
+    font-family: 'Audiowide', cursive;
+    font-size: 30px;
+    display: flex;
+    margin-left: 3%;
+    height: 100px;
+}
+
+#selectOrder {
+    margin-left: 3%;
+    list-style-type: none;
+  }
+
+#selectOrder li a{
+    text-decoration: none;
+} 
+#selectOrder li:hover ul{
+    display: block;
+}
+
+.sortByName li{
+    display: block;
+    font-family: 'Audiowide', cursive;
+    font-size: 40px;
+    list-style-type: none;
+}
+
+.sortByName li a:hover{
+    background: rgb(201, 121, 255);
+}
+
+.sortByName{
+    display: none;
+ 
+}
+
+/*Estilos de Todos los personajes*/
+.All-conteiner{
+    display: inline-flex;
+    align-items: center;
+}
+.All-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+    width: 50%;
+    
+}
+.allCharacters{
+    display: flex;
+    top: 200px;
+    margin-left: 3%;
+   }
+
+
+.All-conteiner img{
+    width: 100px;
+}
+
+.All-conteiner p{
+    color:black;
+    font-family: 'Audiowide', cursive;
+    font-size: 200%;
 }
 
 /*ESTILOS PIE DE PAGINA*/
