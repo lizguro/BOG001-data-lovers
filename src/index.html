@@ -18,10 +18,16 @@
   </header>
   <nav>
     <ul>
-      <li>CHARACTERS</li>
-      <li>EPISODES</li>
-      <li>LOCATIONS</li>
-      <li>⮞</li>
+      <li><a href="#">CHARACTERS</a>
+        <ul class="submenu-char">
+          <li><a href="#">STATUS</a></li>
+          <li><a href="#">SPECIES</a></li>
+        </ul>
+
+      </li>
+      <li><a href="#">EPISODES</a></li>
+      <li><a href="#">LOCATIOS</a></li>
+      <li><a href="#">⮞</a></li>
     </ul>
   </nav>
   <main>
@@ -34,17 +40,17 @@
         <h2>ALL CHARACTERS</h2>
         <div class="alphaOrder">
           <p>Sort by</p>
-          <div id="selectOrder">
-            <ul name="alphaOrder" id="sortByAlpha" class="sortByName">
-              <li id="orderAZ">A-Z</li>
-              <li id="orderZA">Z-A</li>
-            </ul>
-        </div>
-       
+          <ul id="selectOrder">
+            <li><a href="#">select 🢃</a>
+              <ul name="alphaOrder" id="sortByAlpha" class="sortByName">
+                <li id="orderAZ"><a href="#">A-Z</a></li>
+                <li id="orderZA"><a href="#">Z-A</a></li>
+              </ul>
+            </li>
+          </ul>
+
         </div>
         <div id="allCharacters"></div> 
-        
-        
       </section>
     </div>
   </main>

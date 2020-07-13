@@ -33,20 +33,47 @@ nav{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);
 }
 
-nav ul {
+nav > ul {
     display: flex;
     list-style: none;
 }
 
-nav ul li {
+nav ul li a{
     padding: 15px;
     font-family: 'Atma', cursive;
     font-size: 40px;
     color: #16ACC9;
     -webkit-text-stroke: 0.5px #F24ACD;
+    text-decoration: none;
+    
+}
+
+nav ul li{
     text-align: center;
     flex-grow: 1;
+    list-style-type: none;
 }
+
+nav li:hover ul{
+    display: block;
+}
+
+.submenu-char li {
+    display: block;
+}
+
+.submenu-char li a:hover{
+    background: rgb(191, 219, 90);
+}
+
+.submenu-char{
+    display: none;
+    position: absolute;
+    top: 565px;
+    left: 15%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
+}
+
 
 /*ESTILOS MAIN*/
 /*Contiene el fondo del main*/
@@ -118,17 +145,40 @@ main div{
 
 .alphaOrder{
     font-family: 'Audiowide', cursive;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     margin-left: 3%;
+    height: 100px;
 }
 
-.sortByName {
-    font-family: 'Audiowide', cursive;
-    font-size: 30px;
-    margin-left: -18%;
-    list-style: none;
+#selectOrder {
+    margin-left: 3%;
+    list-style-type: none;
+  }
+
+#selectOrder li a{
+    text-decoration: none;
+} 
+#selectOrder li:hover ul{
+    display: block;
 }
+
+.sortByName li{
+    display: block;
+    font-family: 'Audiowide', cursive;
+    font-size: 40px;
+    list-style-type: none;
+}
+
+.sortByName li a:hover{
+    background: rgb(201, 121, 255);
+}
+
+.sortByName{
+    display: none;
+ 
+}
+
 /*Estilos de Todos los personajes*/
 .All-conteiner{
     display: inline-flex;
@@ -143,7 +193,7 @@ main div{
 }
 .allCharacters{
     display: flex;
-
+    top: 200px;
     margin-left: 3%;
    }
 
