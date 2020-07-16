@@ -1,24 +1,32 @@
 // estas funciones son de ejemplo
 
 export const orderNames = (data, option) => {
-  const orderAZ= data.sort(function(prev,next){
-    if(prev.name > next.name){
+  const orderAZ = data.sort(function (prev, next) {
+    if (prev.name > next.name) {
       return 1;
     }
-    if(prev.name < next.name){
+    if (prev.name < next.name) {
       return -1;
     }
   })
 
-  if(option == 'A-Z'){
+  if (option == 'A-Z') {
     return orderAZ;
   }
-  if (option == 'Z-A'){
+  if (option == 'Z-A') {
     return orderAZ.reverse();
   }
 
 };
 
-export const anotherExample = () => {
-  return 'OMG';
+export const filterStatus = (data, option) => {
+  const newFilter = data.filter((obj) => obj.status.includes(option));
+  return newFilter;
 };
+
+    
+
+
+
+
+

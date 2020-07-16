@@ -1,16 +1,18 @@
-import { orderNames } from './data.js';
+import { orderNames, filterStatus } from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
 const root = document.getElementById("root");
 let sortByAlpha = document.querySelector(".sortByName");
-const allCharacters = document.getElementById("allCharacters")
+let allCharacters = document.getElementById("allCharacters");
+let filterByStatus = document.querySelector(".subMenuChar");
+
 const RickMortyDB = data.results;
 
-
+//Función que imprime los personajes principales
 const printMainCharacters = (arrayparameter) => {
 
-    let templateCharacters = "";
+    let templateCharacters = " ";
 
     for (let i = 0; i < 5; i++) {
 
@@ -27,31 +29,44 @@ const printMainCharacters = (arrayparameter) => {
     root.innerHTML = templateCharacters;
 };
 
-const printAllCharacters = (char) => {
-
+//Función que imprime todos sin orden especifico
+const printAllCharacters = (RickMortyDB) => {
+   
     let templateAllCharacters = "";
 
-    for (let i = 0; i < RickMortyDB.length; i++) {
+    RickMortyDB.forEach( card => {
 
         const printAll = `
-            <article class="All-item">
-             <a href="#/${char[i].id}/" class="All-conteiner">
-                 <img src="${char[i].image}" alt="${char[i].name}">
-                  <p>${char[i].name}</p>
-             </a>
-            </article>`
-
-        templateAllCharacters = templateAllCharacters + printAll;
-    }
-    allCharacters.innerHTML = templateAllCharacters;
+         <ol class="All-item">
+            <li>
+            <a href="#/${card.id}/" class="All-conteiner">
+             <img src="${card.image}" alt="${card.name}">
+              <p>${card.name}</p><br>
+              <p>${card.status}</p>
+         </a>     
+         </li>
+        </ol>   
+        `
+    
+       templateAllCharacters = templateAllCharacters + printAll;
+    })    
+    allCharacters.innerHTML = templateAllCharacters;   
 };
 
+//Función que llama a las funcion de ordenar en data.js
 const getOrderNames = (e) => {
     const BtnSort = e.target.textContent;
     printAllCharacters(orderNames(RickMortyDB, BtnSort))
 };
 
-sortByAlpha.addEventListener("click", getOrderNames)
+//Función que llama a la funcion de filtrado por estatus en data.js
+const getFilter = (e) =>{
+    const btnStatus = e.target.textContent;    
+    printAllCharacters(filterStatus(RickMortyDB, btnStatus));
+}
+
+sortByAlpha.addEventListener("click", getOrderNames);
+filterByStatus.addEventListener("click", getFilter);
 
 printMainCharacters(RickMortyDB);
 printAllCharacters(RickMortyDB);
