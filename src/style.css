@@ -42,11 +42,10 @@ nav > ul {
 nav ul li a{
     padding: 15px;
     font-family: 'Atma', cursive;
-    font-size: 40px;
+    font-size: 260%;
     color: #16ACC9;
     -webkit-text-stroke: 0.5px #F24ACD;
     text-decoration: none;
-    
 }
 
 nav ul li{
@@ -55,23 +54,24 @@ nav ul li{
     list-style-type: none;
 }
 
-nav li:hover ul{
+nav li:hover > ul{
     display: block;
 }
 
-.submenu-char li {
+.subMenuChar li {
     display: block;
 }
 
-.submenu-char li a:hover{
+.subMenuChar li a:hover{
     background: rgb(191, 219, 90);
 }
 
-.submenu-char {
+.subMenuChar {
     display: none;
     position: absolute;
+    width: 15%;
     top: 600px;
-    left: 15%;
+    left: 7%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
 }
 
@@ -86,8 +86,9 @@ nav li:hover ul{
 .submenu-season{
     display: none;
     position: absolute;
+    width: 15%;
     top: 600px;
-    left: 39%;
+    left: 32%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
 }
 .submenu-info li {
@@ -101,12 +102,45 @@ nav li:hover ul{
 .submenu-info{
     display: none;
     position: absolute;
+    width: 15%;
     top: 600px;
-    left: 86%;
+    left: 79.5%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
 }
 
+.subMenuStatus li {
+    display: block;
+}
 
+.subMenuStatus li a:hover{
+    background: rgb(191, 219, 90);
+}
+
+.subMenuStatus{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
+}
+
+.subMenuSpecies li {
+    display: block;
+}
+
+.subMenuSpecies li a:hover{
+    background: rgb(191, 219, 90);
+}
+
+.subMenuSpecies{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
+}
 
 /*ESTILOS MAIN*/
 /*Contiene el fondo del main*/
@@ -117,7 +151,7 @@ main{
     background-size: cover;
 }
 
-main div{
+main > div{
     background: rgb(233, 233, 220);
     width: 70%;
     height: auto;
@@ -132,7 +166,6 @@ main div{
     width: auto;
     margin-left: 3%;
     margin-right: 3%;
-    
 }
 
 .mainChacarters{
@@ -150,7 +183,8 @@ main div{
 
 .main-item {
    display: flex;
-   width: 20%;
+   width: 19.5%;
+   padding-left: 0.5%;
 }
 
 .main-item img{
@@ -163,7 +197,10 @@ main div{
     margin-top: -10px;
     font-family: 'Audiowide', cursive;
     font-size: 70%;
+}
 
+a:link{
+    text-decoration: none;
 }
 /*Estilos de sortby*/
 .alphaCharacters h2{
@@ -214,34 +251,119 @@ main div{
 
 /*Estilos de Todos los personajes*/
 .allCharacters{
-    display: flex;
-    top: 200px;
-    margin-left: 3%;
-   }
-
-.All-conteiner{
-    display: inline-flex;
-    align-items: center;
+    display: inline-block;
+    text-align: justify;
+    flex-wrap: wrap;       
 }
+
+
 .All-item{
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
-    margin-bottom: 3%;
-    width: 50%;
-    
+    margin-left: 6%;
+    list-style-type: none;
+    max-width: 200px;
+    min-height: 250px;    
 }
 
-
+.All-conteiner a{
+    display: block;
+}
 
 .All-conteiner img{
-    width: 100px;
+  width: 100%;
+   
 }
 
 .All-conteiner p{
-    color:black;
+    width: 100%;
+    color: white;
     font-family: 'Audiowide', cursive;
-    font-size: 200%;
+    font-size: 120%;
+    background-color: black;
+    text-align: center;
+    margin-top: -4%;
 }
+
+/*ESTILOS TARJETA PERSONAJE*/
+.overlay{
+    background: rgba(101, 221, 127, 0.349);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%); 
+    box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-family: 'Audiowide', cursive;
+    padding: 50px;
+    text-align: center;
+    width: 60%;
+}
+
+.popup .btn-close-popup {
+    margin-top: 0;
+	display: block;
+	text-align: right;
+}
+
+i{
+    font-size:48px;
+    color:rgb(191, 219, 90);
+}
+
+.popup .btn-close-popup i:hover {
+    color: rgb(154, 142, 224);
+    transition: .3s ease all;
+    transform: rotate(45deg);
+} 
+
+.detailed{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.detailed-name{
+    width: 30%;
+}
+.detailed-name img{
+    width: 100%;
+    margin-left: 15%;
+}
+
+.detailed-name h2{
+   color: white;
+   background: rgba(0,0,0,1);
+   width: 100%;
+   align-content: center;
+   margin-left: 15%;
+   font-size: 25px;
+}
+
+.detailed2{
+    width: 60%;
+    margin-left: 10%;
+}
+
+.rm_info {
+    text-align: center;
+    margin-right: 10px;
+    background-color: #16abc9;
+    box-shadow: 0px 0px 50px 0px #d1db4b8f;
+    border-radius: 10px;
+    height: 40px;
+    padding: 2%;
+    font-size: 20px;
+    align-items: center;
+}
+
 
 /*ESTILOS PIE DE PAGINA*/
 footer {
@@ -280,3 +402,24 @@ footer > div{
     width: 45%;
 }
 
+@media screen and (max-device-width: 1366px) and (min-device-width: 1024px){
+
+   .subMenuChar a{
+       font-size: 200%;
+   }
+
+}
+
+@media screen and (max-device-width: 812px) and (min-device-width: 375px){
+
+    nav ul li a{
+        font-size: 150%;
+    }
+    .subMenuChar a{
+        font-size: 150%;
+    }
+ 
+    .subMenuChar {
+        left: 100px ;
+    }
+}

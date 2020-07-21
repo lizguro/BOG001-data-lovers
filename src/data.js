@@ -24,6 +24,11 @@ export const filterStatus = (data, option) => {
   return newFilter;
 };
 
+export const filterSpecies = (data, option) => {
+  const newFilterSpecies = data.filter((obj) => obj.species===option);
+  return newFilterSpecies;
+};
+
     
 
 
