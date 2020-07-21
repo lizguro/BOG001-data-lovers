@@ -36,6 +36,7 @@ nav{
 nav > ul {
     display: flex;
     list-style: none;
+    padding: 1%;
 }
 
 nav ul li a{
@@ -54,25 +55,95 @@ nav ul li{
     list-style-type: none;
 }
 
-nav li:hover ul{
+nav li:hover > ul{
     display: block;
 }
 
-.submenu-char li {
+.subMenuChar li {
     display: block;
 }
 
-.submenu-char li a:hover{
+.subMenuChar li a:hover{
     background: rgb(191, 219, 90);
 }
 
-.submenu-char{
+.subMenuChar {
     display: none;
     position: absolute;
-    top: 565px;
-    left: 15%;
+    width: 15%;
+    top: 600px;
+    left: 7%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
 }
+
+.submenu-season li {
+    display: block;
+}
+
+.submenu-season li a:hover{
+    background: rgb(191, 219, 90);
+}
+
+.submenu-season{
+    display: none;
+    position: absolute;
+    width: 15%;
+    top: 600px;
+    left: 32%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
+}
+.submenu-info li {
+    display: block;
+}
+
+.submenu-info li a:hover{
+    background: rgb(191, 219, 90);
+}
+
+.submenu-info{
+    display: none;
+    position: absolute;
+    width: 15%;
+    top: 600px;
+    left: 79.5%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
+}
+
+.subMenuStatus li {
+    display: block;
+}
+
+.subMenuStatus li a:hover{
+    background: rgb(191, 219, 90);
+}
+
+.subMenuStatus{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
+}
+
+.subMenuSpecies li {
+    display: block;
+}
+
+.subMenuSpecies li a:hover{
+    background: rgb(191, 219, 90);
+}
+
+.subMenuSpecies{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
+}
+
+
 
 
 /*ESTILOS MAIN*/
@@ -180,6 +251,12 @@ main div{
 }
 
 /*Estilos de Todos los personajes*/
+.allCharacters{
+    display: flex;
+    top: 200px;
+    margin-left: 3%;
+   }
+
 .All-conteiner{
     display: inline-flex;
     align-items: center;
@@ -191,11 +268,7 @@ main div{
     width: 50%;
     
 }
-.allCharacters{
-    display: flex;
-    top: 200px;
-    margin-left: 3%;
-   }
+
 
 
 .All-conteiner img{
