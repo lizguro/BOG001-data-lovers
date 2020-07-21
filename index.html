@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Data Lovers</title>
+  <title>Data Lovers - Rick & Morty</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="./imagenes/icono.jpg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 
 <body>
@@ -19,15 +21,46 @@
   <nav>
     <ul>
       <li><a href="#">CHARACTERS</a>
-        <ul class="submenu-char">
-          <li><a href="#">STATUS</a></li>
-          <li><a href="#">SPECIES</a></li>
+        <ul class="subMenuChar">
+          <li><a href="#">STATUS</a>
+            <ul class="subMenuStatus">
+              <li><a href="#">Alive</a></li>
+              <li><a href="#">Dead</a></li>
+              <li><a href="#">unknown</a></li>
+            </ul>
+          </li>
+          <li><a href="#">SPECIES</a>
+            <ul class="subMenuSpecies">
+              <li><a href="#">Alien</a></li>
+              <li><a href="#">Animal</a></li>
+              <li><a href="#">Cronenberg</a></li>
+              <li><a href="#">Disease</a></li>
+              <li><a href="#">Human</a></li>
+              <li><a href="#">Humanoid</a></li>
+              <li><a href="#">Mytholog</a></li>
+              <li><a href="#">Parasite</a></li>
+              <li><a href="#">Poopybutthole</a></li>
+              <li><a href="#">Robot</a></li>
+              <li><a href="#">Vampire</a></li>
+              <li><a href="#">unknown</a></li>
+            </ul>
+          </li>
         </ul>
 
       </li>
-      <li><a href="#">EPISODES</a></li>
-      <li><a href="#">LOCATIOS</a></li>
-      <li><a href="#">🢃</a></li>
+      <li><a href="#">EPISODES</a>
+        <ul class="submenu-season">
+          <li><a href="#">SEASON 1</a></li>
+          <li><a href="#">SEASON 2</a></li>
+          <li><a href="#">SEASON 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">LOCATIONS</a></li>
+      <li><a href="#">MORE INFO</a>
+        <ul class="submenu-info">
+          <li><a href="#">STATS</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <main>
@@ -50,7 +83,7 @@
           </ul>
 
         </div>
-        <div id="allCharacters"></div> 
+        <div id="allCharacters"></div>
       </section>
     </div>
   </main>
