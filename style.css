@@ -68,7 +68,7 @@ nav li:hover > ul{
 .subMenuChar {
     display: none;
     position: absolute;
-    width: 25%;
+    width: 20%;
     left: 3%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
 }
@@ -84,9 +84,8 @@ nav li:hover > ul{
 .submenu-season{
     display: none;
     position: absolute;
-    width: 15%;
-    top: 600px;
-    left: 32%;
+    width: 20%;
+    left: 29%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
 }
 .submenu-info li {
@@ -100,9 +99,8 @@ nav li:hover > ul{
 .submenu-info{
     display: none;
     position: absolute;
-    width: 15%;
-    top: 600px;
-    left: 79.5%;
+    width: 20%;
+    left: 76%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
 }
 
@@ -157,7 +155,7 @@ main > div{
 }
 /*Estilos de personajes principales*/
 #root{
-    font-size: 40px;
+    font-size: 200%;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -248,21 +246,18 @@ a:link{
 }
 
 /*Estilos de Todos los personajes*/
-.allCharacters{
-    display: inline-block;
-    flex-wrap: wrap; 
-    flex-grow: 1;
-    justify-content: space-between;
+#allCharacters{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .All-item{
-    display: inline-block;
-    flex-wrap: wrap;
-    margin-left: 2%;
     list-style-type: none;
     max-width: 200px;
-    min-height: 250px;  
-        
+    min-height: 250px; 
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .All-conteiner a{
@@ -342,7 +337,7 @@ i{
    width: 100%;
    align-content: center;
    margin-left: 10%;
-   font-size: 25px;
+   font-size: 25px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 }
 
 .detailed2{
@@ -405,7 +400,7 @@ footer > div{
 }
 .copy p{
     color: black;
-    font-size: 30px;
+    font-size: 150%;
    text-align: center;
    font-family: 'Audiowide', cursive;
 }
@@ -427,4 +422,10 @@ footer > div{
     nav ul li a{
         font-size: 150%;
     }
+
+    main > div{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+}
 }
