@@ -1,5 +1,5 @@
 // estas funciones son de ejemplo
-
+ 
 export const orderNames = (data, option) => {
   const orderAZ = data.sort(function (prev, next) {
     if (prev.name > next.name) {
