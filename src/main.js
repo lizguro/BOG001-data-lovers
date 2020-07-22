@@ -44,10 +44,9 @@ const printAllCharacters = (RickMortyDB) => {
         const printAll = `
          <ol class="All-item">
             <li>
-                <a href="#/${card.id}/" class="All-conteiner" >
+                <a href="#/${card.id}/" class="All-conteiner" onclick="modal(${card.id})" >
                     <img src="${card.image}" alt="${card.name}">
                     <p>${card.name}</p>
-                    <button class="btn_aboutMe" id="${card.id}" onclick="modal(${card.id})" >About Me</button>   
                 </a> 
               
              </li>
@@ -97,6 +96,7 @@ const getFilter = (e) => {
 const getSpecies = (e) => {
     const btnSpecies = e.target.textContent;
     printAllCharacters(filterSpecies(RickMortyDB, btnSpecies));
+    console.log(filterSpecies)
 }
 
 sortByAlpha.addEventListener("click", getOrderNames);
