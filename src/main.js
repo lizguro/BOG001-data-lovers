@@ -6,7 +6,12 @@ const root = document.getElementById("root");
 let sortByAlpha = document.querySelector(".sortByName");
 let allCharacters = document.getElementById("allCharacters");
 let filterByStatus = document.querySelector(".subMenuStatus");
-let filterBySpecies = document.querySelector(".subMenuSpecies")
+let filterBySpecies = document.querySelector(".subMenuSpecies");
+let stats = document.querySelector(".submenu-info");
+
+document.querySelector(".mainChacarters").style.display="block";
+document.querySelector(".alphaCharacters").style.display="block";
+document.querySelector(".statsCharts").style.display="none";
 
 const RickMortyDB = data.results;
 
@@ -99,9 +104,20 @@ const getSpecies = (e) => {
     console.log(filterSpecies)
 }
 
+const moreInfo = (e) =>{
+    const btnStats = e.target.textContent;
+    if(btnStats==='STATS'){
+        document.querySelector(".mainChacarters").style.display="none";
+        document.querySelector(".alphaCharacters").style.display="none";
+        document.querySelector(".statsCharts").style.display="block";
+    }
+}
+
 sortByAlpha.addEventListener("click", getOrderNames);
 filterByStatus.addEventListener("click", getFilter);
 filterBySpecies.addEventListener("click", getSpecies);
+stats.addEventListener("click", moreInfo);
+
 
 printMainCharacters(RickMortyDB);
 printAllCharacters(RickMortyDB);

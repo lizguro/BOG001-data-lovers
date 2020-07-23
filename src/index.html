@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <link rel="icon" type="image/jpg" href="./imagenes/icono.jpg">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
 </head>
 
 <body>
@@ -85,6 +86,10 @@
         </div>
         <div id="allCharacters"></div>
       </section>
+
+      <section class="statsCharts">
+          <canvas id="myChart" width="400" height="300"></canvas>
+      </section>
     </div>
   </main>
   <footer>
@@ -110,6 +115,7 @@
   </footer>
 
   <script src="main.js" type="module"></script>
+  <script src="chart.js" type="module"></script>
 </body>
 
 </html>
