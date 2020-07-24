@@ -69,7 +69,7 @@ nav li:hover > ul{
     display: none;
     position: absolute;
     width: 20%;
-    left: 3%;
+    left: 4.5%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
 }
 
@@ -219,6 +219,7 @@ a:link{
 #selectOrder {
     margin-left: 3%;
     list-style-type: none;
+    display: flex;
   }
 
 #selectOrder li a{
@@ -243,6 +244,20 @@ a:link{
     display: none;
     position: relative;
     text-align: center;
+}
+
+/*Estilos de Search*/
+#searchName{
+   font-family: 'Audiowide', cursive;  
+   border-radius: 15px;
+   border: 2px solid #39c;
+   height: 35px;
+   text-align: center;
+   font-size: 50%;
+}
+
+.searchName {
+    padding-left: 20%;
 }
 
 /*Estilos de Todos los personajes*/
@@ -404,18 +419,6 @@ footer > div{
     font-size: 150%;
    text-align: center;
    font-family: 'Audiowide', cursive;
-}
-
-@media screen and (max-device-width: 1366px) and (min-device-width: 1024px){
-
-   
-
-}
-
-@media screen and (max-device-width: 1024px) and (min-device-width: 812px){
-  
-
-
 }
 
 @media screen and (max-device-width: 812px) and (min-device-width: 375px){

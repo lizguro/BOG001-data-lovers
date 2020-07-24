@@ -1,4 +1,4 @@
-import { orderNames, filterStatus, filterSpecies} from './data.js';
+import { orderNames, filterStatus, filterSpecies , filterName} from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -9,6 +9,7 @@ let filterByStatus = document.querySelector(".subMenuStatus");
 let filterBySpecies = document.querySelector(".subMenuSpecies");
 let stats = document.querySelector(".submenu-info");
 let mainNav = document.querySelector(".navMain");
+let searchName = document.getElementById("searchName");
 
 
 document.querySelector(".mainChacarters").style.display="block";
@@ -131,6 +132,16 @@ const getSpecies = (e) => {
     printAllCharacters(filterSpecies(RickMortyDB, btnSpecies));
 }
 
+const getCharacter = () =>{
+    let nameRickMorty = searchName.value;
+    console.log(nameRickMorty)
+    document.querySelector(".mainChacarters").style.display="block";
+    document.querySelector(".alphaCharacters").style.display="block";
+    document.querySelector(".statsCharts").style.display="none";
+    printAllCharacters(filterName(RickMortyDB,nameRickMorty));
+
+}
+
 //Función que me permite mostrar o ocultar estadisticas
 const moreInfo = (e) =>{
     const btnStats = e.target.textContent;
@@ -158,6 +169,7 @@ filterByStatus.addEventListener("click", getFilter);
 filterBySpecies.addEventListener("click", getSpecies);
 stats.addEventListener("click", moreInfo);
 mainNav.addEventListener("click", mainBar);
+searchName.addEventListener("keyup", getCharacter);
 
 printMainCharacters(RickMortyDB);
 printAllCharacters(RickMortyDB);
