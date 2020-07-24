@@ -259,6 +259,19 @@ a:link{
 .searchName {
     padding-left: 20%;
 }
+.searchName a{
+    display: inline-flex;
+}
+
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }
+  }
+
+.searchName a i{
+    animation: 2s rotate360 infinite linear;
+}
+
+
 
 /*Estilos de Todos los personajes*/
 #allCharacters{
@@ -417,6 +430,7 @@ footer > div{
 .copy p{
     color: black;
     font-size: 150%;
+    height: auto;
    text-align: center;
    font-family: 'Audiowide', cursive;
 }
