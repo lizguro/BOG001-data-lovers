@@ -264,11 +264,14 @@ a:link{
 }
 
 @keyframes rotate360 {
-    to { transform: rotate(360deg); }
+    to { transform: rotate(90deg); }
   }
 
 .searchName a i{
     animation: 2s rotate360 infinite linear;
+    position: relative;
+    left: 12%;
+    line-height: 2;
 }
 
 
