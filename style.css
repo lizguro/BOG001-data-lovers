@@ -397,6 +397,7 @@ footer > div{
 
 .copy{
     width: 100%;
+    height: auto;
 }
 .copy p{
     color: black;

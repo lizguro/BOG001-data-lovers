@@ -1,4 +1,4 @@
-import { orderNames, filterStatus, filterSpecies } from './data.js';
+import { orderNames, filterStatus, filterSpecies} from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -6,7 +6,14 @@ const root = document.getElementById("root");
 let sortByAlpha = document.querySelector(".sortByName");
 let allCharacters = document.getElementById("allCharacters");
 let filterByStatus = document.querySelector(".subMenuStatus");
-let filterBySpecies = document.querySelector(".subMenuSpecies")
+let filterBySpecies = document.querySelector(".subMenuSpecies");
+let stats = document.querySelector(".submenu-info");
+let mainNav = document.querySelector(".navMain");
+
+
+document.querySelector(".mainChacarters").style.display="block";
+document.querySelector(".alphaCharacters").style.display="block";
+document.querySelector(".statsCharts").style.display="none";
 
 const RickMortyDB = data.results;
 
@@ -18,28 +25,47 @@ const printMainCharacters = (arrayparameter) => {
     for (let i = 0; i < 5; i++) {
 
         const print = `
-            <article class="main-item">
-                <a href="#/${arrayparameter[i].id}/" class="main-conteiner">
+            <article class="main-item" >
+                <a href="#/${arrayparameter[i].id}/" class="main-conteiner" onclick="modal(${arrayparameter[i].id})">
                     <img src="${arrayparameter[i].image}" alt="${arrayparameter[i].name}">
                      <p>${arrayparameter[i].name}</p>
                 </a>
-            </article>`
+            </article>
+            
+            <div class="overlay" id="overlay${arrayparameter[i].id}" style="display:none">
+            <div class="popup" id="modal${arrayparameter[i].id}" style="display:none">
+                <a href="#" id="btn-close-popup" class="btn-close-popup" onclick="closeModal(${arrayparameter[i].id})">
+                    <i class="fas fa-times-circle"></i>
+                </a>
+                <div class="detailed">
+                    <div class="detailed-name">
+                        <img src="${arrayparameter[i].image}" alt="RM_card_popup">
+                        <h2 class="name_popup">${arrayparameter[i].name}</h2>
+                    </div>            
+                     <div class="detailed2">
+                         <p class="rm_info"> <strong> Status: </strong>  ${arrayparameter[i].status} </p>
+                         <p class="rm_info"> <strong> Species: </strong>  ${arrayparameter[i].species}</p>
+                         <p class="rm_info"><strong> Gender: </strong> ${arrayparameter[i].gender}</p>
+                         <p class="rm_info"><strong>Origin: </strong>${arrayparameter[i].origin.name}</p>
+                         <p class="rm_info"><strong>Locations:</strong> ${arrayparameter[i].location.name}</p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+            `
 
         templateCharacters = templateCharacters + print;
     }
     root.innerHTML = templateCharacters;
 };
 
-//Función que imprime todos sin orden especifico
+//Función que imprime todos los personajes de acuerdo al orden o filtrado
 const printAllCharacters = (RickMortyDB) => {
 
     let templateAllCharacters = "";
 
     RickMortyDB.forEach(card => {
-
-        if(RickMortyDB.type === ""){
-            RickMortyDB.type = 'I do not have Type'
-        }
 
         const printAll = `
          <ol class="All-item">
@@ -81,27 +107,57 @@ const printAllCharacters = (RickMortyDB) => {
     allCharacters.innerHTML = templateAllCharacters;
 };
 
-//Función que llama a las funcion de ordenar en data.js
+//Función que llama la funcion de ordenar en data.js
 const getOrderNames = (e) => {
     const BtnSort = e.target.textContent;
     printAllCharacters(orderNames(RickMortyDB, BtnSort))
 };
 
-//Función que llama a la funcion de filtrado por estatus en data.js
+//Función que llama la funcion de filtrado por estatus en data.js
 const getFilter = (e) => {
     const btnStatus = e.target.textContent;
+    document.querySelector(".mainChacarters").style.display="block";
+    document.querySelector(".alphaCharacters").style.display="block";
+    document.querySelector(".statsCharts").style.display="none";
     printAllCharacters(filterStatus(RickMortyDB, btnStatus));
 }
 
+//Función que llama la funcion de filtrado por especies en data.js
 const getSpecies = (e) => {
+    document.querySelector(".mainChacarters").style.display="block";
+    document.querySelector(".alphaCharacters").style.display="block";
+    document.querySelector(".statsCharts").style.display="none";
     const btnSpecies = e.target.textContent;
     printAllCharacters(filterSpecies(RickMortyDB, btnSpecies));
-    console.log(filterSpecies)
 }
+
+//Función que me permite mostrar o ocultar estadisticas
+const moreInfo = (e) =>{
+    const btnStats = e.target.textContent;
+    if(btnStats==='STATS'){
+        document.querySelector(".mainChacarters").style.display="none";
+        document.querySelector(".alphaCharacters").style.display="none";
+        document.querySelector(".statsCharts").style.display="block";
+    }
+}
+
+const mainBar = (e) =>{
+    const btnmain = e.target.textContent;
+    if(btnmain==='CHARACTERS'){
+        document.querySelector(".mainChacarters").style.display="block";
+        document.querySelector(".alphaCharacters").style.display="block";
+        document.querySelector(".statsCharts").style.display="none";
+        printMainCharacters(RickMortyDB);
+        printAllCharacters(RickMortyDB);
+    }
+}
+
 
 sortByAlpha.addEventListener("click", getOrderNames);
 filterByStatus.addEventListener("click", getFilter);
 filterBySpecies.addEventListener("click", getSpecies);
+stats.addEventListener("click", moreInfo);
+mainNav.addEventListener("click", mainBar);
 
 printMainCharacters(RickMortyDB);
 printAllCharacters(RickMortyDB);
@@ -123,4 +179,5 @@ function closeModal (id) {
     modalPopup.style.display = 'none';
     overlay.style.display = 'none';
 }
+
 
