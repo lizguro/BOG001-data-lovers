@@ -82,20 +82,21 @@
         <div class="alphaOrder">
           <p>Sort by</p>
           <ul id="selectOrder">
-            <li><a href="#">select</a>
-              <i class='fas fa-angle-down' style='font-size:100%;color:rgb(85, 26, 139);'></i>
+            <li>
+              <a href="#">select <i class='fas fa-angle-down' style='font-size:100%;color:rgb(85, 26, 139);'></i></a>
+             
               <ul name="alphaOrder" id="sortByAlpha" class="sortByName">
                 <li id="orderAZ"><a href="#">A-Z</a></li>
                 <li id="orderZA"><a href="#">Z-A</a></li>
               </ul>
             </li>
             <li class="searchName"><a href="#">
-              <i class='fas fa-search' style='font-size:80%;color:rgb(85, 26, 139)'></i>
-              <form action="">
-                <input type="search" id="searchName" placeholder="Search Name">
-              </form>
-              
-            </a></li>
+                <i class='fas fa-search' style='font-size:80%;color:rgb(85, 26, 139)'></i>
+                <form action="">
+                  <input type="search" id="searchName" placeholder="Search Name">
+                </form>
+
+              </a></li>
           </ul>
 
         </div>
@@ -103,8 +104,8 @@
       </section>
 
       <section class="statsCharts">
-          <canvas id="myChart"></canvas>
-          <canvas id="charStatus"></canvas>
+        <canvas id="myChart"></canvas>
+        <canvas id="charStatus"></canvas>
       </section>
     </div>
   </main>
@@ -132,7 +133,7 @@
 
   <script src="chart.js" type="module"></script>
   <script src="main.js" type="module"></script>
-  
+
 </body>
 
 </html>
