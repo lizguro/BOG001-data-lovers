@@ -39,7 +39,7 @@ nav > ul {
 }
 
 nav ul li a{
-    padding: 15px;
+    padding: 1%;
     font-family: 'Atma', cursive;
     font-size: 260%;
     color: #16ACC9;
@@ -51,6 +51,7 @@ nav ul li{
     text-align: center;
     flex-grow: 1;
     list-style-type: none;
+
 }
 
 nav li:hover > ul{
@@ -100,7 +101,7 @@ nav li:hover > ul{
     display: none;
     position: absolute;
     width: 20%;
-    left: 76%;
+    left: 78%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(242,74,205,1) 100%);;
 }
 
@@ -210,7 +211,7 @@ a:link{
 
 .alphaOrder{
     font-family: 'Audiowide', cursive;
-    font-size: 200%;
+    font-size: 150%;
     display: flex;
     margin-left: 3%;
     height: 100px;
@@ -286,13 +287,16 @@ a:link{
 .All-item{
     list-style-type: none;
     max-width: 200px;
-    min-height: 250px; 
+    min-height: 280px; 
     margin-left: 3%;
     margin-right: 3%;
+   
 }
 
 .All-conteiner a{
     display: block;
+    
+    
 }
 
 .All-conteiner img{
@@ -305,9 +309,13 @@ a:link{
     font-family: 'Audiowide', cursive;
     font-size: 120%;
     background-color: black;
-    text-align: center;
     margin-top: -4%;
-}
+    height: 72px; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 
 /*ESTILOS TARJETA PERSONAJE*/
 .overlay{
@@ -434,8 +442,8 @@ footer > div{
     color: black;
     font-size: 150%;
     height: auto;
-   text-align: center;
-   font-family: 'Audiowide', cursive;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
 }
 
 @media screen and (max-device-width: 812px) and (min-device-width: 375px){
