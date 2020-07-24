@@ -1,5 +1,3 @@
-
-
 import data from './data/rickandmorty/rickandmorty.js';
 
 const RickMortyDB = data.results;
@@ -11,7 +9,8 @@ const totalData = RickMortyDB.length;
 
 let count={};
 let cont={};
-const getPercentSpecies = RickMortyDB.forEach((item) => {
+
+RickMortyDB.forEach((item) => {
     
     if(count[item.species]){ 
         count[item.species] += 1;
@@ -21,7 +20,7 @@ const getPercentSpecies = RickMortyDB.forEach((item) => {
     
 });
 
-const getPercentStatus = RickMortyDB.forEach((item) => {
+RickMortyDB.forEach((item) => {
     
     if(cont[item.status]){ 
         cont[item.status] += 1;
@@ -31,7 +30,7 @@ const getPercentStatus = RickMortyDB.forEach((item) => {
     
 });
 
-const chartSpecies = new Chart (myCanvas,{
+new Chart (myCanvas,{
     type: "horizontalBar",
     data:{
         labels:labels.map(s => s.species),
@@ -91,7 +90,7 @@ const chartSpecies = new Chart (myCanvas,{
        },
 });
 
-const chartStatus = new Chart (canvaStatus,{
+new Chart (canvaStatus,{
     type: "doughnut",
     data:{
         labels:Status.map(s => s.status),
