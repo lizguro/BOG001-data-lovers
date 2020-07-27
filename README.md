@@ -47,6 +47,14 @@ en una interfaz intuituva y facil de usar.
 <img src= "src/imagenes/prototipo/Test_usabilidad_002.png" width = "500">
 <img src= "src/imagenes/prototipo/Test_usabilidad_003.png" width = "500">
 
+### Problemas detectados con el test de usabilidad
+
+* Al cerrar el popup con la información del personaje, se muestra el encabezado de la pagina, en vez de continuar en la ubicación del personaje que se selecciono.
+* Los submenus no mantenian su posición, cuando se cambiaba de tamaño de pantalla.
+* La imagen del encabezado se veia muy alargada, dande una apariencia aplastada.
+* El nombre que se muestra en la tarjeta de cada personaje, variaba su tamaño dependiendo de longevidad del nombre, haciendo ver dispares las cajas que contenian esos literales.
+
+
 # 4. Objetivos de aprendizaje
 
 El objetivo principal de este proyecto es que aprendas a diseñar y construir una
@@ -103,7 +111,6 @@ usuario necesita.
 * [x] Planear y ejecutar tests de usabilidad.
 
 
-
 # 5. Checklist
 
 * [x] Usa VanillaJS.
@@ -116,10 +123,10 @@ usuario necesita.
 * [x] Incluye historias de usuario en `README.md`.
 * [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
   `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+* [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
   en `README.md`.
-* [ ] Incluye link a Zeplin o Figma en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
+* [x] Incluye link a Zeplin o Figma en `README.md`.
+* [x] Incluye el listado de problemas que detectaste a través de tests de
   usabilidad en el `README.md`.
 * [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
 * [x] UI: Permite ordenar data por uno o más campos (asc y desc).
