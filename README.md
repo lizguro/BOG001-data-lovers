@@ -1,4 +1,4 @@
-<img src= "src/imagenes/prototipo/RickMorty.PNG" width = "500">
+<img src= "src/imagenes/prototipo/RickMorty.PNG" width = "1000">
 
 ## Índice
 
@@ -49,7 +49,7 @@ en una interfaz intuituva y facil de usar.
 
 ## 4. Diseño final
 
-<video src= "https://www.loom.com/share/620afc7b8dc84f108a9dd1473b360017" width = "500">
+[![Diseño Final](https://img.youtube.com/vi/GB35Eyb-J4c/0.jpg)](https://www.loom.com/share/620afc7b8dc84f108a9dd1473b360017)
 
 ### Problemas detectados con el test de usabilidad
 
