@@ -32,11 +32,11 @@ en una interfaz intuituva y facil de usar.
 
 ## 1. Prototipo de baja fidelidad
 
-<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_001.png" width = "500">
-<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_002.png" width = "500">
-<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_003.png" width = "500">
-<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_004.png" width = "500">
-<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_005.png" width = "500">
+<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_001.png" width = "300">
+<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_002.png" width = "300">
+<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_003.png" width = "300">
+<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_004.png" width = "300">
+<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_005.png" width = "300">
 
 ## 2. Prototipo de alta fidelidad
 <img src= "src/imagenes/prototipo/Sketch_alta_fidelidad_desktops_001.png" width = "500">
@@ -49,7 +49,7 @@ en una interfaz intuituva y facil de usar.
 
 ## 4. Diseño final
 
-[![Diseño Final](<img src= "src/imagenes/prototipo/play_to_view.png">](https://www.loom.com/share/620afc7b8dc84f108a9dd1473b360017)
+(<img src= "src/imagenes/prototipo/play_to_view.png">](https://www.loom.com/share/620afc7b8dc84f108a9dd1473b360017)
 
 ### Problemas detectados con el test de usabilidad
 
