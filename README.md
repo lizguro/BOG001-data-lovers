@@ -46,9 +46,8 @@ en una interfaz intuituva y facil de usar.
 
 ## 4. Diseño final
 
-[(https://www.loom.com/share/620afc7b8dc84f108a9dd1473b360017)]
+(https://www.loom.com/share/620afc7b8dc84f108a9dd1473b360017)
 
-<img src= "src/imagenes/prototipo/play_to_view.png">
 
 ### Problemas detectados con el test de usabilidad
 
