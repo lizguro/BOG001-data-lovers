@@ -1,4 +1,5 @@
 # Data Lovers
+<img src= "src/imagenes/prototipo/RickMorty.png" width = "500">
 
 ## Índice
 
@@ -46,6 +47,13 @@ en una interfaz intuituva y facil de usar.
 <img src= "src/imagenes/prototipo/Test_usabilidad_001.png" width = "500">
 <img src= "src/imagenes/prototipo/Test_usabilidad_002.png" width = "500">
 <img src= "src/imagenes/prototipo/Test_usabilidad_003.png" width = "500">
+
+## 4. Diseño final
+
+<img src= "src/imagenes/prototipo/Diseño_final_001.png" width = "500">
+<img src= "src/imagenes/prototipo/Diseño_final_001.png" width = "500">
+
+
 
 ### Problemas detectados con el test de usabilidad
 

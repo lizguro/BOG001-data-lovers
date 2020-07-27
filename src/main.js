@@ -134,7 +134,6 @@ const getSpecies = (e) => {
 
 const getCharacter = () =>{
     let nameRickMorty = searchName.value;
-    console.log(nameRickMorty)
     document.querySelector(".mainChacarters").style.display="block";
     document.querySelector(".alphaCharacters").style.display="block";
     document.querySelector(".statsCharts").style.display="none";

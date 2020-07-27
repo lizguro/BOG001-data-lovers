@@ -33,10 +33,3 @@ export const filterName = (data, character) => {
   const newFilterName = data.filter((obj) => obj.name.toLowerCase().startsWith(character.toLowerCase()));
   return newFilterName;
 };
-
-
-
-
-
-
-

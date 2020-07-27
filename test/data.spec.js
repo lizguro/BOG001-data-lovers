@@ -1,4 +1,5 @@
-import { orderNames, filterStatus, filterSpecies } from '../src/data.js';
+import { orderNames, filterStatus, filterSpecies, filterName } from '../src/data.js';
+
 describe('orderNames', () => {
   it('is it a function', () => {
     expect(typeof orderNames).toBe('function');
@@ -18,18 +19,18 @@ describe('orderNames', () => {
     expect(orderNames(chars, chosenOption)).toStrictEqual(sortedChars);
   });
   it('sorts data alphabetically upward', () => {
-      const chars = [
-        { name: "Rick Sanchez" },
-        { name: "Morty Smith" },
-        { name: "Summer Smith" },
-      ];
-      const chosenOption = "A-Z";
-      const sortedChars = [
-        { name: "Morty Smith" },
-        { name: "Rick Sanchez" },
-        { name: "Summer Smith" },
-      ];
-      expect(orderNames(chars, chosenOption)).toStrictEqual(sortedChars);
+    const chars = [
+      { name: "Rick Sanchez" },
+      { name: "Morty Smith" },
+      { name: "Summer Smith" },
+    ];
+    const chosenOption = "A-Z";
+    const sortedChars = [
+      { name: "Morty Smith" },
+      { name: "Rick Sanchez" },
+      { name: "Summer Smith" },
+    ];
+    expect(orderNames(chars, chosenOption)).toStrictEqual(sortedChars);
   });
   describe('filterStatus', () => {
     it('is a function', () => {
@@ -71,5 +72,25 @@ describe('orderNames', () => {
       ];
       expect(filterSpecies(speciesOfChars, userOption)).toStrictEqual(filteredSpecies);
     });
+  });
+});
+
+describe('filterName', () => {
+  it('is a function', () => {
+    expect(typeof filterName).toBe('function');
+  });
+  it('Search data by Names', () => {
+    const input = [
+      { char: 'Eli' },
+      { char: 'Ethan' },
+      { char: 'Alexander'},
+      { char: 'Annie'},
+    ];
+    const input2 = 'e';
+    const output = [
+      { char: 'Eli' },
+      { char: 'Ethan' },
+    ];
+    expect(filterName(input, input2)).toEqual(output);
   });
 });
