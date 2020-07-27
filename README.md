@@ -32,8 +32,7 @@ en una interfaz intuituva y facil de usar.
 
 ## 1. Prototipo de baja fidelidad
 
-<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_001.png" width = "300">
-<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_002.png" width = "300">
+<img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_001.png" width = "300"><img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_002.png" width = "300">
 <img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_003.png" width = "300">
 <img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_004.png" width = "300">
 <img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_005.png" width = "300">
