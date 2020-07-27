@@ -84,8 +84,8 @@ usuario necesita.
 * [x] Manipular objects (key | value)
 * [x] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 | [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] Diferenciar entre expression y statements.
-* [ ] Diferenciar entre tipos de datos atómicos y estructurados.
+* [x] Diferenciar entre expression y statements.
+* [x] Diferenciar entre tipos de datos atómicos y estructurados.
 
 ### Testing
 
