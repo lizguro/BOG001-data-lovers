@@ -1,4 +1,3 @@
-# Data Lovers
 <img src= "src/imagenes/prototipo/RickMorty.PNG" width = "500">
 
 ## Índice
@@ -50,10 +49,7 @@ en una interfaz intuituva y facil de usar.
 
 ## 4. Diseño final
 
-<img src= "src/imagenes/prototipo/Diseño_final_001.PNG" width = "500">
-<img src= "src/imagenes/prototipo/Diseño_final_001.PNG" width = "500">
-
-
+<video src= "https://www.loom.com/share/620afc7b8dc84f108a9dd1473b360017" width = "500">
 
 ### Problemas detectados con el test de usabilidad
 
