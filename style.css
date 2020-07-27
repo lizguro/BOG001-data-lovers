@@ -275,8 +275,6 @@ a:link{
     line-height: 2;
 }
 
-
-
 /*Estilos de Todos los personajes*/
 #allCharacters{
     display:flex;
@@ -287,7 +285,7 @@ a:link{
 .All-item{
     list-style-type: none;
     max-width: 200px;
-    min-height: 280px; 
+    min-height: 300px; 
     margin-left: 3%;
     margin-right: 3%;
    
@@ -310,7 +308,7 @@ a:link{
     font-size: 120%;
     background-color: black;
     margin-top: -4%;
-    height: 72px; 
+    height: 90px; 
     align-items: center;
     display: flex;
     justify-content: center;
