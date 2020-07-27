@@ -5,12 +5,8 @@
 * [1. Definición del producto](#1-Definición-del-producto)
 * [2. Historias de usuario](#2-Historias-de-usuario)
 * [3. Diseño de la Interfaz de usuario](#3-Diseño-de-la-Interfaz-de-Usuario)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [4. Objetivos de aprendezaje](#4-Objetivos-de-aprendizaje)
+* [5. Checklist](#5-checklist)
 
 ***
 
@@ -43,9 +39,13 @@ en una interfaz intuituva y facil de usar.
 <img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_005.png" width = "500">
 
 ## 2. Prototipo de alta fidelidad
+<img src= "src/imagenes/prototipo/Sketch_alta_fidelidad_desktops_001.png" width = "500">
+<img src= "src/imagenes/prototipo/Sketch_alta_fidelidad_desktops_002.png" width = "500"> 
 
 ## 3. Testeos de usabilidad
-
+<img src= "src/imagenes/prototipo/Test_usabilidad_001.png" width = "500">
+<img src= "src/imagenes/prototipo/Test_usabilidad_002.png" width = "500">
+<img src= "src/imagenes/prototipo/Test_usabilidad_003.png" width = "500">
 
 # 4. Objetivos de aprendizaje
 
@@ -114,7 +114,7 @@ usuario necesita.
   lines y branches.
 * [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
 * [x] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+* [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
   `README.md`.
 * [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
   en `README.md`.
