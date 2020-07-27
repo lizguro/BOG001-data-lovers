@@ -38,7 +38,7 @@ en una interfaz intuituva y facil de usar.
 <img src= "src/imagenes/prototipo/Sketch_baja_fidelidad_desktops_005.png" width = "300">
 
 ## 2. Prototipo de alta fidelidad
-<img src= "src/imagenes/prototipo/Sketch_alta_fidelidad_desktops_001.png" width = "300"><img src= "src/imagenes/prototipo/Sketch_alta_fidelidad_desktops_002.png" width = "400"> 
+<img src= "src/imagenes/prototipo/Sketch_alta_fidelidad_desktops_001.png" width = "320"><img src= "src/imagenes/prototipo/Sketch_alta_fidelidad_desktops_002.png" width = "400"> 
 
 ## 3. Testeos de usabilidad
 <img src= "src/imagenes/prototipo/Test_usabilidad_001.png" width = "500"><img src= "src/imagenes/prototipo/Test_usabilidad_002.png" width = "500">
